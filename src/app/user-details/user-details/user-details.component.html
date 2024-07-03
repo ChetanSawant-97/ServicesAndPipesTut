@@ -1,0 +1,10 @@
+<input type="text" #inputText >
+
+<h1>{{ userName | capitalize }} </h1>
+
+<p>{{patientList}}</p>
+
+<h4 *ngFor="let item of patientList">{{item.patientName}}</h4>
+
+<button (click)="setName(inputText.value)" style="padding: 6px 15px;"> Click Tranform</button>
+
